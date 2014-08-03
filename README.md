@@ -46,7 +46,7 @@ cd regex101.com
 python -m SimpleHTTPServer 8080
 ```
 
-Open a browser, and go to http://localhost:8080/ and it works ! ;)
+Open a browser, and go to [http://localhost:8080/](http://localhost:8080/) and it works ! ;)
 
 
 
