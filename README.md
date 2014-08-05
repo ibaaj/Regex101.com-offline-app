@@ -7,7 +7,7 @@ Use regex101.com offline
 
 I'm not affiliated with regex101.com.
 
-It requires Python 2.x and wget.
+It requires wget and to create a http-server.
 
 ## OSX
 
@@ -24,6 +24,8 @@ apt-get install wget
 
 # How to do ?
 
+## Recover files
+
 Open a Terminal : 
 
 ```
@@ -39,12 +41,24 @@ wget --output-document ./regex101.com/js/pcrelib16.js http://regex101.com/js/pcr
 
 ```
 
-Then run a SimpleHTTPServer with python in the directory : 
+## Http Server
 
 ```
 cd regex101.com
+`````
+
+
+### python 2.x natively
+```
 python -m SimpleHTTPServer 8080
 ```
+
+### nodejs
+```
+npm install -g http-server
+http-server -p 8080
+````
+
 
 Open a browser, and go to [http://localhost:8080/](http://localhost:8080/) and it works ! ;)
 
