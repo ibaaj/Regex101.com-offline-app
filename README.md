@@ -43,11 +43,13 @@ wget --output-document ./regex101.com/js/pcrelib16.js http://regex101.com/js/pcr
 
 ## Http Server
 
+Here is a [https://gist.github.com/willurd/5720255](big list of http static server) and how to use them.
+
+I suggest you to use python or nodejs.
+
 ```
 cd regex101.com
 `````
-
-
 ### python 2.x natively
 ```
 python -m SimpleHTTPServer 8080
