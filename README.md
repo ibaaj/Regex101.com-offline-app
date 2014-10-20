@@ -20,6 +20,9 @@ brew install wget
 ``` 
 apt-get install wget
 ```
+## Windows
+
+use [Wget for Windows](http://gnuwin32.sourceforge.net/packages/wget.htm).
 
 
 # How to do ?
@@ -44,6 +47,8 @@ wget --output-document ./regex101.com/js/pcrelib16.js http://regex101.com/js/pcr
 ## Http Server
 
 Here is a [big list of http static server](https://gist.github.com/willurd/5720255) and how to use them.
+
+Or for windows, [answers of this question on stackoverflow](http://stackoverflow.com/questions/5050851/best-lightweight-web-server-only-static-content-for-windows).
 
 I suggest you to use python or nodejs.
 
