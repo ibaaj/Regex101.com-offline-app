@@ -9,7 +9,7 @@ I'm not affiliated with regex101.com, so I will not provide a regex101's package
 It requires wget and to create a http-server.
 
 #### Wget 
-Wget is available on OSX via brew (```brew install wget```), on Linux (```sudo apt-get install wget```) or [for Windows](http://gnuwin32.sourceforge.net/packages/wget.htm).
+Wget is available on OSX via brew (```brew install wget```), on Linux (```sudo apt-get install wget```) and [ Windows](http://gnuwin32.sourceforge.net/packages/wget.htm).
 
 Wget's major strong side compared to curl is its ability to download recursively - [(see this topic)](http://unix.stackexchange.com/a/47435).
 
