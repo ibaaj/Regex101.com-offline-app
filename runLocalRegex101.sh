@@ -12,7 +12,7 @@ wget --output-document ./js/pcre.regex101.js http://regex101.com/js/pcre.regex10
 wget --output-document ./js/pcrelib16.js http://regex101.com/js/pcrelib16.js;
 
 function server {
- python3 -m http.server $@;
+  python -m SimpleHTTPServer $@;
 }
 
 function cleanup {
