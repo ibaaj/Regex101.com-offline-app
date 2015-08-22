@@ -8,7 +8,7 @@ Use regex101.com offline
 I'm not affiliated with regex101.com, so I will not provide a regex101's package but this script will help you to create your own.
 It requires wget and to create a http-server.
 
-#### wget 
+#### Wget 
 Wget is available on OSX via brew (```brew install wget```), on Linux (```sudo apt-get install wget```) or [for Windows](http://gnuwin32.sourceforge.net/packages/wget.htm).
 
 Wget's major strong side compared to curl is its ability to download recursively - [(see this topic)](http://unix.stackexchange.com/a/47435).
@@ -28,8 +28,8 @@ For windows, [answers of this question on stackoverflow](http://stackoverflow.co
 ### Scripts 
 
 You can find in the repo 2 scripts to run your regex101 instance locally directly : 
-- runLocalRegex101.sh (thanks [@CodeMan99](https://github.com/CodeMan99)) 
-- runLocalRegex101-full.sh with fonts 
+- [runLocalRegex101.sh](https://raw.githubusercontent.com/Syskaw/Regex101.com-offline-app/master/runLocalRegex101.sh) (thanks [@CodeMan99](https://github.com/CodeMan99)) 
+- [runLocalRegex101-full.sh](https://raw.githubusercontent.com/Syskaw/Regex101.com-offline-app/master/runLocalRegex101-full.sh) with fonts 
 
 If you only want to save (without fonts) regex101 you just have to run :
 
