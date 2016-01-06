@@ -13,8 +13,13 @@ It requires wget and to create a http-server.
 ```
 $ cd ~/
 $ bash <(wget -qO- https://raw.githubusercontent.com/shahril96/Regex101.com-offline-app/master/runLocalRegex101-full.sh)
-$ cd regex101
-$ ./run.sh
+```
+
+And everytime you want to run regex101 offline, just type
+
+```
+cd ~/regex101/
+bash run.sh
 ```
 
 Open web browser and type `localhost:8000`, then you're good to go.
