@@ -11,7 +11,7 @@ It requires wget and to create a http-server.
 # Installation
 
 ```
-cd your_prefered_folder
+$ cd your_prefered_folder
 $ bash <(wget -qO- https://raw.githubusercontent.com/shahril96/Regex101.com-offline-app/master/runLocalRegex101-full.sh)
 ```
 
