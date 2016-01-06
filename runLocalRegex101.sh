@@ -1,29 +1,18 @@
 #!/bin/bash
 
-trap ctrl_c SIGINT;
+# check for largest file if not exist
+if [ ! -f ./js/pcrelib16.js ]; then
 
-tempdir=`mktemp -d`
+    wget -r --no-host-directories --no-parent http://regex101.com
+    wget --output-document ./js/javascript.regex101.js http://regex101.com/js/javascript.regex101.js;
+    wget --output-document ./js/pcre.regex101.js http://regex101.com/js/pcre.regex101.js;
+    wget --output-document ./js/pcrelib16.js http://regex101.com/js/pcrelib16.js;
 
-pushd $tempdir
+    echo "#!/bin/bash" > run.sh
+    echo "kill -9 \$(ps aux | grep '[S]impleHTTPServer' | awk '{print \$2}')" >> run.sh
+    echo "python -m SimpleHTTPServer $@" >> run.sh
 
-wget -r --no-host-directories --no-parent http://regex101.com
-wget --output-document ./js/javascript.regex101.js http://regex101.com/js/javascript.regex101.js;
-wget --output-document ./js/pcre.regex101.js http://regex101.com/js/pcre.regex101.js;
-wget --output-document ./js/pcrelib16.js http://regex101.com/js/pcrelib16.js;
+    chmod +x run.sh
+fi
 
-function server {
-  python -m SimpleHTTPServer $@;
-}
-
-function cleanup {
- echo "Cleaning up downloaded files...";
- popd;
- rm -rf ${tempdir};
-}
-
-function ctrl_c {
- cleanup;
- exit $?;
-}
-
-server $@;
+bash run.sh
