@@ -11,12 +11,11 @@ It requires wget and to create a http-server.
 # Installation
 
 ```
+cd your_prefered_folder
 $ bash <(wget -qO- https://raw.githubusercontent.com/shahril96/Regex101.com-offline-app/master/runLocalRegex101-full.sh)
 ```
 
-Default installation will created `regex101` on current directory.
-
-And everytime you want to run regex101 offline, open directory `regex101`, and just type
+And everytime you want to run regex101 offline, just type
 
 ```
 bash run.sh
