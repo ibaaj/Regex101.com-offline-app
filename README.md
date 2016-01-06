@@ -15,6 +15,13 @@ $ cd your_prefered_folder
 $ bash <(wget -qO- https://raw.githubusercontent.com/shahril96/Regex101.com-offline-app/master/runLocalRegex101-full.sh)
 ```
 
+or
+
+```
+$ cd your_prefered_folder
+$ bash <(wget -qO- https://raw.githubusercontent.com/shahril96/Regex101.com-offline-app/master/runLocalRegex101.sh)
+```
+
 And everytime you want to run regex101 offline, just type
 
 ```
