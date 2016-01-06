@@ -11,15 +11,7 @@ if [ ! -f ./js/pcrelib16.js ]; then
     wget --output-document ./js/javascript.regex101.js http://regex101.com/js/javascript.regex101.js;
     wget --output-document ./js/pcre.regex101.js http://regex101.com/js/pcre.regex101.js;
     wget --output-document ./js/pcrelib16.js http://regex101.com/js/pcrelib16.js;
+    wget --output-document ./run.sh https://raw.githubusercontent.com/shahril96/Regex101.com-offline-app/master/run.sh
 fi
 
-
-function server {
-
- # kill already running python server
- kill -9 $(ps aux | grep '[S]impleHTTPServer' | awk '{print $2}') &> /dev/null
-
- python -m SimpleHTTPServer $@;
-}
-
-server $@;
+bash run.sh

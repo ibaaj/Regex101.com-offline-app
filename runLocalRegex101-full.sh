@@ -1,9 +1,5 @@
 #!/bin/bash
 
-dir=./regex101/
-mkdir -p $dir
-pushd $dir
-
 # check for largest file if not exist
 if [ ! -f ./js/pcrelib16.js ]; then
 
@@ -30,14 +26,7 @@ if [ ! -f ./js/pcrelib16.js ]; then
     unzip fa-4.5.0.zip -d ./css/;
     rm fa-4.5.0.zip;
     sed -i -- '9s/\/\/maxcdn.bootstrapcdn.com\/font-awesome\/4.2.0\/css\//.\/css\/font-awesome-4.5.0\/css\//g' index.html;
+    wget --output-document ./run.sh https://raw.githubusercontent.com/shahril96/Regex101.com-offline-app/master/run.sh
 fi
 
-function server {
-
- # kill already running python server
- kill $(ps aux | grep '[S]impleHTTPServer' | awk '{print $2}')
-
- python -m SimpleHTTPServer $@;
-}
-
-server $@;
+bash run.sh
