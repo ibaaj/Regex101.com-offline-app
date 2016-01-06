@@ -7,7 +7,7 @@ pushd $dir
 # check for largest file if not exist
 if [ ! -f ./js/pcrelib16.js ]; then
 
-    echo "Donwnloading html & js...";
+    echo "Downloading html & js...";
     wget -r --no-host-directories --no-parent http://regex101.com
     wget --output-document ./js/javascript.regex101.js http://regex101.com/js/javascript.regex101.js;
     wget --output-document ./js/pcre.regex101.js http://regex101.com/js/pcre.regex101.js;
