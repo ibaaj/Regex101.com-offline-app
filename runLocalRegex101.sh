@@ -8,6 +8,7 @@ if [ ! -f ./js/pcrelib16.js ]; then
     wget --output-document ./js/pcre.regex101.js http://regex101.com/js/pcre.regex101.js;
     wget --output-document ./js/pcrelib16.js http://regex101.com/js/pcrelib16.js;
 
+    echo "#!/bin/bash" > run.sh
     echo "kill -9 \$(ps aux | grep '[S]impleHTTPServer' | awk '{print \$2}')" > run.sh
     echo "python -m SimpleHTTPServer $@" >> run.sh
 

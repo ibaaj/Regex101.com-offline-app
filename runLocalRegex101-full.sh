@@ -27,7 +27,8 @@ if [ ! -f ./js/pcrelib16.js ]; then
     rm fa-4.5.0.zip;
     sed -i -- '9s/\/\/maxcdn.bootstrapcdn.com\/font-awesome\/4.2.0\/css\//.\/css\/Font-Awesome-4.5.0\/css\//g' index.html;
 
-    echo "kill -9 \$(ps aux | grep '[S]impleHTTPServer' | awk '{print \$2}')" > run.sh
+    echo "#!/bin/bash" > run.sh
+    echo "kill -9 \$(ps aux | grep '[S]impleHTTPServer' | awk '{print \$2}')" >> run.sh
     echo "python -m SimpleHTTPServer $@" >> run.sh
 
     chmod +x run.sh
