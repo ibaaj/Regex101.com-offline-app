@@ -1,29 +1,25 @@
 #!/bin/bash
 
-trap ctrl_c SIGINT;
+dir=./regex101/
+mkdir -p $dir
+pushd $dir
 
-tempdir=`mktemp -d`
+# check for largest file
+if [ ! -f ./js/pcrelib16.js ]; then
 
-pushd $tempdir
+    wget -r --no-host-directories --no-parent http://regex101.com
+    wget --output-document ./js/javascript.regex101.js http://regex101.com/js/javascript.regex101.js;
+    wget --output-document ./js/pcre.regex101.js http://regex101.com/js/pcre.regex101.js;
+    wget --output-document ./js/pcrelib16.js http://regex101.com/js/pcrelib16.js;
+fi
 
-wget -r --no-host-directories --no-parent http://regex101.com
-wget --output-document ./js/javascript.regex101.js http://regex101.com/js/javascript.regex101.js;
-wget --output-document ./js/pcre.regex101.js http://regex101.com/js/pcre.regex101.js;
-wget --output-document ./js/pcrelib16.js http://regex101.com/js/pcrelib16.js;
 
 function server {
-  python -m SimpleHTTPServer $@;
-}
 
-function cleanup {
- echo "Cleaning up downloaded files...";
- popd;
- rm -rf ${tempdir};
-}
+ # kill already running python server
+ kill -9 $(ps aux | grep '[S]impleHTTPServer' | awk '{print $2}') &> /dev/null
 
-function ctrl_c {
- cleanup;
- exit $?;
+ python -m SimpleHTTPServer $@;
 }
 
 server $@;
