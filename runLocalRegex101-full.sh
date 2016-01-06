@@ -25,7 +25,7 @@ if [ ! -f ./js/pcrelib16.js ]; then
     wget --output-document fa-4.5.0.zip https://github.com/FortAwesome/Font-Awesome/archive/v4.5.0.zip;
     unzip fa-4.5.0.zip -d ./css/;
     rm fa-4.5.0.zip;
-    sed -i -- '9s/\/\/maxcdn.bootstrapcdn.com\/font-awesome\/4.2.0\/css\//.\/css\/font-awesome-4.5.0\/css\//g' index.html;
+    sed -i -- '9s/\/\/maxcdn.bootstrapcdn.com\/font-awesome\/4.2.0\/css\//.\/css\/Font-Awesome-4.5.0\/css\//g' index.html;
     wget --output-document ./run.sh https://raw.githubusercontent.com/shahril96/Regex101.com-offline-app/master/run.sh
 fi
 
