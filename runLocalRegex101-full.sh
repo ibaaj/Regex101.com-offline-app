@@ -4,7 +4,7 @@ dir=./regex101/
 mkdir -p $dir
 pushd $dir
 
-# check for largest file is already existed
+# check for largest file if not exist
 if [ ! -f ./js/pcrelib16.js ]; then
 
     echo "Donwnloading html & js...";

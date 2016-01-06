@@ -4,7 +4,7 @@ dir=./regex101/
 mkdir -p $dir
 pushd $dir
 
-# check for largest file
+# check for largest file if not exist
 if [ ! -f ./js/pcrelib16.js ]; then
 
     wget -r --no-host-directories --no-parent http://regex101.com
