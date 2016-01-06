@@ -10,6 +10,8 @@ if [ ! -f ./js/pcrelib16.js ]; then
 
     echo "kill -9 \$(ps aux | grep '[S]impleHTTPServer' | awk '{print \$2}')" > run.sh
     echo "python -m SimpleHTTPServer $@" >> run.sh
+
+    chmod +x run.sh
 fi
 
 bash run.sh
