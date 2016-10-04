@@ -34,7 +34,7 @@ You can find in the repo 2 scripts to run your regex101 instance locally directl
 If you only want to save (without fonts) regex101 you just have to run :
 
 ```
-wget -r --no-host-directories --no-parent https://regex101.com
+wget -r --no-host-directories --no-parent https://regex101.com;
 wget --output-document ./pcreWorker.js https://regex101.com/pcreWorker.js;
 wget --output-document ./pcrelib.js https://regex101.com/pcrelib.js;
 ``` 
