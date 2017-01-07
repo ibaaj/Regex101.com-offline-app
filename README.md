@@ -35,9 +35,9 @@ wget --output-document ./pcreWorker.js https://regex101.com/pcreWorker.js;
 wget --output-document ./pcrelib.js https://regex101.com/pcrelib.js;
 ``` 
 
-You can find a script here : [runLocalRegex101.sh](https://raw.githubusercontent.com/Syskaw/Regex101.com-offline-app/master/runLocalRegex101.sh) (thanks for you help [@CodeMan99](https://github.com/CodeMan99)) to run your regex101 instance easily :
+You can find a script here : [runLocalRegex101.sh](https://raw.githubusercontent.com/ibaaj/Regex101.com-offline-app/master/runLocalRegex101.sh) (thanks for you help [@CodeMan99](https://github.com/CodeMan99)) to run your regex101 instance easily :
 ```
-wget -O - https://raw.githubusercontent.com/Syskaw/Regex101.com-offline-app/master/runLocalRegex101.sh | bash
+wget -O - https://raw.githubusercontent.com/ibaaj/Regex101.com-offline-app/master/runLocalRegex101.sh | bash
 ```
 
 
