@@ -30,9 +30,9 @@ For windows, [answers of this question on stackoverflow](http://stackoverflow.co
 If you only want to save regex101 you just have to paste these lines :
 
 ```
-wget -r --no-host-directories --no-parent https://regex101.com;
-wget --output-document ./pcreWorker.js https://regex101.com/pcreWorker.js;
-wget --output-document ./pcrelib.js https://regex101.com/pcrelib.js;
+wget -r --no-host-directories --no-parent https://regex101.com
+wget --output-document ./pcreWorker.js https://regex101.com/pcreWorker.js
+wget --output-document ./pcrelib.js https://regex101.com/pcrelib.js
 ``` 
 
 You can find a script here : [runLocalRegex101.sh](https://raw.githubusercontent.com/ibaaj/Regex101.com-offline-app/master/runLocalRegex101.sh) (thanks for you help [@CodeMan99](https://github.com/CodeMan99)) to run your regex101 instance easily :
